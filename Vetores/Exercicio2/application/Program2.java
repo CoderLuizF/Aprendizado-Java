@@ -15,5 +15,13 @@ public class Program2 {
         int n = sc.nextInt();
 
         Product[] vect = new Product[n];
+
+        for(int i=0; i<n; i++) {
+            sc.nextLine();
+            String name = sc.nextLine();
+            double price = sc.nextDouble();
+
+            vect[i] = new Product(name, price);
+        }
     }
 }
