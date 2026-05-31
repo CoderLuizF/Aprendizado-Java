@@ -10,7 +10,10 @@ public class Program1 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
+        int n = sc.nextInt();
 
+        //criação de vetor
+        double[] vect = new double[n];
 
 
         sc.close();
