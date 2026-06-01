@@ -23,5 +23,17 @@ public class Program2 {
 
             vect[i] = new Product(name, price);
         }
+
+        double sum = 0;
+        for(int i=0; i<n; i++) {
+            sum += vect[i].getPrice();
+        }
+
+        double avg = sum / n;
+
+        System.out.printf("Avarage price = %.2f", avg);
+
+        sc.close();
+
     }
 }
