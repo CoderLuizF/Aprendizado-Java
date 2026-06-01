@@ -55,6 +55,17 @@ public class Program4 {
 
         System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n ", porcentagem);
 
+        if(contMenor16 > 0) {
+            System.out.println("Nomes das pessoas menores de 16 anos");
+
+            for(int i=0; i< vect.length; i++) {
+                if(vect[i].menorDe16()) {
+                    System.out.println("- " + vect[i].getNome());
+                }
+            }
+
+        }
+
         sc.close();
 
     }
