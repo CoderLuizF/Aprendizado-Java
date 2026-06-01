@@ -51,6 +51,10 @@ public class Program4 {
             }
         }
 
+        double porcentagem = ((double) contMenor16 / n) * 100.0;
+
+        System.out.printf("Pessoas com menos de 16 anos: %.1f%%%n ", porcentagem);
+
         sc.close();
 
     }
