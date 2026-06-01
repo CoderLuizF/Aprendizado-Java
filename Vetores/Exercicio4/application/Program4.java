@@ -41,7 +41,8 @@ public class Program4 {
             somaAlturas += vect[i].getAltura();
         }
         double alturaMedia = somaAlturas / n;
-
+        System.out.println();
+        System.out.printf("Altura média: %.2f%n", alturaMedia);
 
 
         sc.close();

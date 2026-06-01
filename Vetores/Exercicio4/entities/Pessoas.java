@@ -35,4 +35,8 @@ public class Pessoas {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
+    public boolean menorDe16() {
+        return idade < 16;
+    }
 }
