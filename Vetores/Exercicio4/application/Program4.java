@@ -44,6 +44,12 @@ public class Program4 {
         System.out.println();
         System.out.printf("Altura média: %.2f%n", alturaMedia);
 
+        int contMenor16 = 0;
+        for(int i=0; i< vect.length; i++) {
+            if(vect[i].menorDe16()){
+                contMenor16++;
+            }
+        }
 
         sc.close();
 
