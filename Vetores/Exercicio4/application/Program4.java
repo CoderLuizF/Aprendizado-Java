@@ -36,6 +36,12 @@ public class Program4 {
             vect[i] = new Pessoas(nome, idade, altura);
         }
 
+        double somaAlturas = 0.0;
+        for(int i=0; i< vect.length; i++) {
+            somaAlturas += vect[i].getAltura();
+        }
+        double alturaMedia = somaAlturas / n;
+
 
 
         sc.close();
