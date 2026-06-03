@@ -30,6 +30,12 @@ public class Program5 {
             rooms[roomNumber] = new Rent(name, email);
         }
 
+        for(int i=0; i<10; i++) {
+            if(rooms[i] != null) {
+                System.out.println(i + ": " + rooms[i]);
+            }
+        }
+
         sc.close();
     }
 }
