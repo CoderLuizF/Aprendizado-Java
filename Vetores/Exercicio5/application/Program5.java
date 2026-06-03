@@ -25,7 +25,9 @@ public class Program5 {
             System.out.println("Email: ");
             String email = sc.next();
             System.out.println("Room: ");
+            int roomNumber = sc.nextInt();
 
+            rooms[roomNumber] = new Rent(name, email);
         }
 
         sc.close();
