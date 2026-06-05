@@ -40,5 +40,11 @@ public class Program6 {
         for(String x : result) {
             System.out.println(x);
         }
+
+        //Encontrar um elemento por meio de um predicado (primeiro elemento que começa com 'C')
+        System.out.println("--------------------");
+        String name = list.stream().filter(x -> x.charAt(0) == 'C').findFirst().orElse(null);
+        System.out.println(name);
+
     }
 }
