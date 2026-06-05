@@ -12,6 +12,7 @@ public class Program6 {
         list.add("Cássia");
         list.add("Sônia");
         list.add("Vinícius");
+        list.add(3, "José Luis");
 
         for(String x : list){
             System.out.println(x);
