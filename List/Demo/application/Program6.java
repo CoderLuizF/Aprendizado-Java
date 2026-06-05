@@ -2,6 +2,7 @@ package application;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Program6 {
     public static void main(String[] args) {
@@ -12,6 +13,7 @@ public class Program6 {
         list.add("Cássia");
         list.add("Sônia");
         list.add("Vinícius");
+        list.add("Carlos");
         list.add(3, "José Luis");
 
         System.out.println(list.size());
@@ -33,5 +35,10 @@ public class Program6 {
         System.out.println("--------------------");
         System.out.println("Index of Cássia: " + list.indexOf("Cássia"));
 
+        System.out.println("--------------------");
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'C').toList();
+        for(String x : result) {
+            System.out.println(x);
+        }
     }
 }
