@@ -14,6 +14,8 @@ public class Program6 {
         list.add("Vinícius");
         list.add(3, "José Luis");
 
+        System.out.println(list.size());
+
         for(String x : list){
             System.out.println(x);
         }
