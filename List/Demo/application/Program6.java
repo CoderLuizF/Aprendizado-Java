@@ -16,6 +16,9 @@ public class Program6 {
 
         System.out.println(list.size());
 
+        list.remove("José Luis");
+        list.remove(3);
+
         for(String x : list){
             System.out.println(x);
         }
