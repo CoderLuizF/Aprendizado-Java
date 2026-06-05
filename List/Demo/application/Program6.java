@@ -30,5 +30,8 @@ public class Program6 {
             System.out.println(x);
         }
 
+        System.out.println("--------------------");
+        System.out.println("Index of Cássia: " + list.indexOf("Cássia"));
+
     }
 }
