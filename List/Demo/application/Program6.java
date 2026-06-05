@@ -16,10 +16,17 @@ public class Program6 {
 
         System.out.println(list.size());
 
+        for(String x : list){
+            System.out.println(x);
+        }
+
+        System.out.println("--------------------");
         list.remove("José Luis");
         list.remove(3);
+        //remover com um predicado (que retorna um verdadeiro ou falso)
+        list.removeIf(x -> x.charAt(0) == 'S');
 
-        for(String x : list){
+        for(String x : list) {
             System.out.println(x);
         }
 
