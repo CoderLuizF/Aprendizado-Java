@@ -8,7 +8,14 @@ public class Program6 {
 
         List<String> list = new ArrayList<>();
 
+        list.add("Luiz Felipe");
+        list.add("Cássia");
+        list.add("Sônia");
+        list.add("Vinícius");
 
+        for(String x : list){
+            System.out.println(x);
+        }
 
     }
 }
