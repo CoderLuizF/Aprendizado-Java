@@ -8,7 +8,8 @@ public class Program7 {
 
         Scanner sc = new Scanner(System.in);
 
-
+        //leitura do tamanho da matriz
+        int n = sc.nextInt();
 
 
         sc.close();
