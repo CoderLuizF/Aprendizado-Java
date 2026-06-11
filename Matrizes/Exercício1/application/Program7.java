@@ -11,6 +11,9 @@ public class Program7 {
         //leitura do tamanho da matriz
         int n = sc.nextInt();
 
+        //um array com duas dimensões
+        int[][] mat = new int[n][n];
+
 
         sc.close();
     }
