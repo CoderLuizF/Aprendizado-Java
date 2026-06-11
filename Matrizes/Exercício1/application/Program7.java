@@ -8,7 +8,7 @@ public class Program7 {
 
         Scanner sc = new Scanner(System.in);
 
-        //leitura do tamanho da matriz
+        //leitura do tamanho da matriz(array bidimensional)
         int n = sc.nextInt();
 
         //um array com duas dimensões
