@@ -3,6 +3,7 @@ package application;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class Program8 {
@@ -39,5 +40,11 @@ public class Program8 {
 
         System.out.println("forma 1: d04 usando o método format = " + d04.format(fmt1));
         System.out.println("forma 2: d04 usando o método format = " + fmt1.format(d04));
+
+        //Personalizando o Instant
+        DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+        //withZone com o metodo ZoneId passando o systemDefault() pega o fuso do sistema do usuário
+        Instant d09 = Instant.parse("2026-02-20T12:10:26Z");
+        System.out.println("Instant personalizado: " + fmt2.format(d09));
     }
 }
