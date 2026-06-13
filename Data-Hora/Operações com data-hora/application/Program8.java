@@ -51,5 +51,15 @@ public class Program8 {
         //Convetendo o Instant para a data local considerando o fuso do meu sistema
         LocalDate r1 = LocalDate.ofInstant(d09, ZoneId.systemDefault());
         System.out.println("r1 = " + r1);
+
+        //Pegando dia/mes/ano separadamente
+        System.out.println("d04 dia: " + d04.getDayOfMonth());
+        System.out.println("d04 mês: " + d04.getMonthValue());
+        System.out.println("d04 mês: " + d04.getYear());
+
+        //Pegando horários separadamente
+        System.out.println("d05 hora = " + d05.getHour());
+        System.out.println("d05 minuto = " + d05.getMinute());
+        System.out.println("d05 segundo = " + d05.getSecond());
     }
 }
