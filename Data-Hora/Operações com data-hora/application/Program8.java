@@ -20,5 +20,8 @@ public class Program8 {
         System.out.println();
         LocalDate d04 = LocalDate.parse("2026-05-02");
         System.out.println("Texto para data-hora: " + d04);
+
+        LocalDateTime d05 = LocalDateTime.parse("2026-05-08T09:30:10");
+        System.out.println("Texto para data com horário: " + d05);
     }
 }
