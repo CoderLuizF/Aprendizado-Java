@@ -33,5 +33,11 @@ public class Program8 {
 
         LocalDate d08 = LocalDate.parse("02/05/2001", fmt1);
         System.out.println("Data personalizada: " + d08);
+
+        //CONVERTENDO DATA-HORA PARA TEXTO
+        //Usando o d04, d05 e d06 para converter
+
+        System.out.println("forma 1: d04 usando o método format = " + d04.format(fmt1));
+        System.out.println("forma 2: d04 usando o método format = " + fmt1.format(d04));
     }
 }
