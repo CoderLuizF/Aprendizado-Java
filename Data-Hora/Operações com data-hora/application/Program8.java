@@ -25,6 +25,6 @@ public class Program8 {
         System.out.println("Texto para data com horário: " + d05);
 
         Instant d06 = Instant.parse("2003-05-05T11:30:44-03:00");
-        System.out.println("Texto para data com horário subtraindo -03:00 para igualar com o fuso brasileiro");
+        System.out.println("Texto para data com horário subtraindo -03:00 para igualar com o fuso brasileiro" + d06);
     }
 }
