@@ -61,5 +61,22 @@ public class Program8 {
         System.out.println("d05 hora = " + d05.getHour());
         System.out.println("d05 minuto = " + d05.getMinute());
         System.out.println("d05 segundo = " + d05.getSecond());
+
+        //OPERAÇÕES COM DATA-HORA
+        LocalDate pastWeekLocalDate = d04.minusWeeks(1);
+        System.out.println("voltando 1 semana: " + pastWeekLocalDate);
+
+        LocalDate pastDayLocalDate = d04.minusDays(1);
+        System.out.println("voltando 1 dia: " + pastDayLocalDate);
+
+        LocalDate nextMonthDate = d04.plusMonths(1);
+        System.out.println("avançando 1 mês: " + nextMonthDate);
+
+        LocalDate nextYear = d04.plusYears(1);
+        System.out.println("avançando 1 ano: " + nextYear);
+
+        //COM O INSTANT E LOCALDATETIME PODE ADICIONAR HORÁRIOS TAMBÉM
+
+
     }
 }
