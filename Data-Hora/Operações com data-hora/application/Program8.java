@@ -1,9 +1,6 @@
 package application;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 public class Program8 {
@@ -77,6 +74,14 @@ public class Program8 {
 
         //COM O INSTANT E LOCALDATETIME PODE ADICIONAR HORÁRIOS TAMBÉM
 
+        //Duração entre duas data-horas
 
+        //Com o localDate tem que converter para um localDateTime para comparar a duração
+        Duration t1 = Duration.between(pastWeekLocalDate.atStartOfDay(), d04.atStartOfDay());
+        System.out.println("t1 dias = " + t1.toDays());
+
+        LocalDateTime pastWeekd05 = d05.minusDays(7);
+        Duration t2 = Duration.between(pastWeekd05, d05);
+        System.out.println("t2 dias = " + t2.toDays());
     }
 }
