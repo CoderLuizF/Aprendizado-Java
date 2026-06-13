@@ -16,5 +16,9 @@ public class Program8 {
 
         Instant d03 = Instant.now();
         System.out.printf("Data local com fuso horário: " + d03);
+
+        System.out.println();
+        LocalDate d04 = LocalDate.parse("2026-05-02");
+        System.out.println("Texto para data-hora: " + d04);
     }
 }
