@@ -44,7 +44,12 @@ public class Program8 {
         //Personalizando o Instant
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
         //withZone com o metodo ZoneId passando o systemDefault() pega o fuso do sistema do usuário
-        Instant d09 = Instant.parse("2026-02-20T12:10:26Z");
+        Instant d09 = Instant.parse("2026-02-20T01:10:26Z");
         System.out.println("Instant personalizado: " + fmt2.format(d09));
+
+        //CONVERTER DATA-HORA GLOBAL PARA LOCAL
+        //Convetendo o Instant para a data local considerando o fuso do meu sistema
+        LocalDate r1 = LocalDate.ofInstant(d09, ZoneId.systemDefault());
+        System.out.println("r1 = " + r1);
     }
 }
