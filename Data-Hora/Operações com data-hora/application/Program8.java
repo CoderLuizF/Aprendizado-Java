@@ -3,10 +3,14 @@ package application;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Program8 {
 
     public static void main(String[] args) {
+
+        //Objeto de formatação de data (ESTUDAR SOBRE)
+        DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         LocalDate d01 = LocalDate.now();
         System.out.println("Data local atual: " + d01);
@@ -26,5 +30,8 @@ public class Program8 {
 
         Instant d06 = Instant.parse("2003-05-05T11:30:44-03:00");
         System.out.println("Texto para data com horário subtraindo -03:00 para igualar com o fuso brasileiro" + d06);
+
+        LocalDate d08 = LocalDate.parse("02/05/2001", fmt1);
+        System.out.println("Data personalizada: " + d08);
     }
 }
