@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/List/Demo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Matrizes/Exercício1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Data-Hora/Operações com data-hora" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Composição/Exercício1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Enum/ExemploEnum" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
