@@ -30,4 +30,10 @@ public class Account {
     public Double getBalance() {
         return balance;
     }
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+    public void deposit(double amount) {
+        balance += amount;
+    }
 }
