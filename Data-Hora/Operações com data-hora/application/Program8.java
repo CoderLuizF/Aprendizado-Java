@@ -1,0 +1,87 @@
+package application;
+
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+
+public class Program8 {
+
+    public static void main(String[] args) {
+
+        //Objeto de formatação de data (ESTUDAR SOBRE)
+        DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        LocalDate d01 = LocalDate.now();
+        System.out.println("Data local atual: " + d01);
+
+        LocalDateTime d02 = LocalDateTime.now();
+        System.out.println("Data local com horário: " + d02);
+
+        Instant d03 = Instant.now();
+        System.out.printf("Data local com fuso horário: " + d03);
+
+        System.out.println();
+        LocalDate d04 = LocalDate.parse("2026-05-02");
+        System.out.println("Texto para data-hora: " + d04);
+
+        LocalDateTime d05 = LocalDateTime.parse("2026-05-08T09:30:10");
+        System.out.println("Texto para data com horário: " + d05);
+
+        Instant d06 = Instant.parse("2003-05-05T11:30:44-03:00");
+        System.out.println("Texto para data com horário subtraindo -03:00 para igualar com o fuso brasileiro" + d06);
+
+        LocalDate d08 = LocalDate.parse("02/05/2001", fmt1);
+        System.out.println("Data personalizada: " + d08);
+
+        //CONVERTENDO DATA-HORA PARA TEXTO
+        //Usando o d04, d05 e d06 para converter
+
+        System.out.println("forma 1: d04 usando o método format = " + d04.format(fmt1));
+        System.out.println("forma 2: d04 usando o método format = " + fmt1.format(d04));
+
+        //Personalizando o Instant
+        DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+        //withZone com o metodo ZoneId passando o systemDefault() pega o fuso do sistema do usuário
+        Instant d09 = Instant.parse("2026-02-20T01:10:26Z");
+        System.out.println("Instant personalizado: " + fmt2.format(d09));
+
+        //CONVERTER DATA-HORA GLOBAL PARA LOCAL
+        //Convetendo o Instant para a data local considerando o fuso do meu sistema
+        LocalDate r1 = LocalDate.ofInstant(d09, ZoneId.systemDefault());
+        System.out.println("r1 = " + r1);
+
+        //Pegando dia/mes/ano separadamente
+        System.out.println("d04 dia: " + d04.getDayOfMonth());
+        System.out.println("d04 mês: " + d04.getMonthValue());
+        System.out.println("d04 mês: " + d04.getYear());
+
+        //Pegando horários separadamente
+        System.out.println("d05 hora = " + d05.getHour());
+        System.out.println("d05 minuto = " + d05.getMinute());
+        System.out.println("d05 segundo = " + d05.getSecond());
+
+        //OPERAÇÕES COM DATA-HORA
+        LocalDate pastWeekLocalDate = d04.minusWeeks(1);
+        System.out.println("voltando 1 semana: " + pastWeekLocalDate);
+
+        LocalDate pastDayLocalDate = d04.minusDays(1);
+        System.out.println("voltando 1 dia: " + pastDayLocalDate);
+
+        LocalDate nextMonthDate = d04.plusMonths(1);
+        System.out.println("avançando 1 mês: " + nextMonthDate);
+
+        LocalDate nextYear = d04.plusYears(1);
+        System.out.println("avançando 1 ano: " + nextYear);
+
+        //COM O INSTANT E LOCALDATETIME PODE ADICIONAR HORÁRIOS TAMBÉM
+
+        //Duração entre duas data-horas
+
+        //Com o localDate tem que converter para um localDateTime para comparar a duração
+        Duration t1 = Duration.between(pastWeekLocalDate.atStartOfDay(), d04.atStartOfDay());
+        System.out.println("t1 dias = " + t1.toDays());
+
+        LocalDateTime pastWeekd05 = d05.minusDays(7);
+        Duration t2 = Duration.between(pastWeekd05, d05);
+        System.out.println("t2 dias = " + t2.toDays());
+    }
+}
