@@ -2,6 +2,7 @@ package entities;
 
 public class SavingsAccount extends Account1 {
 
+    //taxa de juros
     private Double interestRate;
 
     public SavingsAccount(){
@@ -16,6 +17,10 @@ public class SavingsAccount extends Account1 {
     }
     public void setInterestRate(Double interestRate) {
         this.interestRate = interestRate;
+    }
+
+    public void updateBalance() {
+        balance += balance * interestRate;
     }
 
 }
