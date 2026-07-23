@@ -4,10 +4,11 @@ public class BusinessAccount extends Account1 {
 
     private Double loanLimit;
 
-    public BusinessAccount(){
+    public BusinessAccount() {
         super();
     }
-    public BusinessAccount(Integer number, String holder, Double balance, Double loanLimit){
+
+    public BusinessAccount(Integer number, String holder, Double balance, Double loanLimit) {
         super(number, holder, balance);
         this.loanLimit = loanLimit;
     }
@@ -15,12 +16,13 @@ public class BusinessAccount extends Account1 {
     public Double getLoanLimit() {
         return loanLimit;
     }
+
     public void setLoanLimit(Double loanLimit) {
         this.loanLimit = loanLimit;
     }
 
     public void loan(double amount) {
-        if(amount <= loanLimit) {
+        if (amount <= loanLimit) {
             balance += amount - 10.0;
         }
     }

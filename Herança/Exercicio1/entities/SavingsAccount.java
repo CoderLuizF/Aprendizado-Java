@@ -5,16 +5,19 @@ public class SavingsAccount extends Account1 {
     //taxa de juros
     private Double interestRate;
 
-    public SavingsAccount(){
+    public SavingsAccount() {
         super();
     }
-    public SavingsAccount(Integer number, String holder, Double balance, Double interestRate){
+
+    public SavingsAccount(Integer number, String holder, Double balance, Double interestRate) {
         super(number, holder, balance);
         this.interestRate = interestRate;
     }
+
     public Double getInterestRate() {
         return interestRate;
     }
+
     public void setInterestRate(Double interestRate) {
         this.interestRate = interestRate;
     }
