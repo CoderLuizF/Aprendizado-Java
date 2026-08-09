@@ -36,7 +36,7 @@ public class Program9 {
             double valuePerHour = sc.nextDouble();
 
             if (ch == 'y') {
-                System.out.print("Addicional charge: ");
+                System.out.print("Additional charge: ");
                 double additionalCharge = sc.nextDouble();
 
                 Employee emp = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
@@ -48,6 +48,13 @@ public class Program9 {
                 list.add(emp);
             }
 
+        }
+
+        System.out.println();
+        System.out.println("PAYMENTS: ");
+
+        for (Employee emp : list) {
+            System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
         }
 
 
