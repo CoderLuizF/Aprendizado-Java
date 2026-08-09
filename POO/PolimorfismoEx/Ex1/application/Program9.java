@@ -20,7 +20,7 @@ public class Program9 {
         System.out.println("Enter the number of employees: ");
         int n = sc.nextInt();
 
-        for (int i=1; i<=n; i++) {
+        for (int i = 1; i <= n; i++) {
             System.out.println("Employee #" + i + " data");
             System.out.print("Outsourced (y/n)? ");
             char ch = sc.next().charAt(0);
@@ -42,8 +42,7 @@ public class Program9 {
                 Employee emp = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
 
                 list.add(emp);
-            }
-            else {
+            } else {
                 Employee emp = new Employee(name, hours, valuePerHour);
 
                 list.add(emp);
