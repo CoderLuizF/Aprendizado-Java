@@ -37,8 +37,10 @@ public class Program11 {
         } catch (InputMismatchException e) {
             System.out.println("Input error!");
 
-        }
+        } finally {
+            System.out.println("Finally sendo utilizado!");
         sc.close();
+        }
         System.out.println("***METHOD2 END***");
     }
 }
