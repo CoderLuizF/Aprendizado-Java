@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Herança/Exercicio1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/POO/PolimorfismoEx/Ex1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Exceções/Try-Catch/Ex1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Exceções/Try-Catch/Ex2pilhaDeChamadaDeMetodos" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
