@@ -17,5 +17,14 @@ public class Program13 {
 
             String line = br.readLine();
 
+            while (line != null) {
+                System.out.println(line);
+                line = br.readLine();
+            }
+        }
+        catch () {
+
+        }
+
     }
 }
