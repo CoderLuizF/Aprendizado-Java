@@ -1,10 +1,21 @@
 package application;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class Program13 {
 
     public static void main(String[] args) {
 
-        String path = "c:\\Ex\\in.txt";
+        String path = "c:\\temp\\ex.txt";
+        FileReader fr = null;
+        BufferedReader br = null;
+
+        try {
+            fr = new FileReader(path);
+            br = new BufferedReader(fr);
+
+            String line = br.readLine();
 
     }
 }
