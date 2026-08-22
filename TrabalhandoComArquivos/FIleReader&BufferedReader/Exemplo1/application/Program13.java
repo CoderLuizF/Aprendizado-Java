@@ -2,6 +2,7 @@ package application;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Program13 {
 
@@ -21,9 +22,21 @@ public class Program13 {
                 System.out.println(line);
                 line = br.readLine();
             }
-        }
-        catch () {
+        } catch (IOException e) {
+            System.out.println("Error: " + e.getMessage());
 
+        } finally {
+            try {
+                if (br != null) {
+                    br.close();
+                }
+                if (fr != null) {
+                    fr.close();
+                }
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
     }
