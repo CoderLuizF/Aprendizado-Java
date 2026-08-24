@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Exceções/Try-Catch/Ex2pilhaDeChamadaDeMetodos" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TrabalhandoComArquivos/File&amp;Scanner/LendoArquivo" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/TrabalhandoComArquivos/FIleReader&amp;BufferedReader/Exemplo1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/TrabalhandoComArquivos/FileWriter&amp;BufferedWriter/Ex1" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
