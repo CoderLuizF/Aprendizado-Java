@@ -1,9 +1,2 @@
-Uma empresa possui funcionários próprios e tercerizados.
-Para cada funcionário, deseja-se registrar nome, horas trabalhadas
-e valor por hora. Funcionários tercerizados possuem ainda uma despesa adicional.
-
-O pagamento dos funcionários corresponde ao valor da hora multiplicado pelas horas trabalhadas,
-sendo que os funcionários tercerizados ainda recebem um bônus correspondente a 110% de sua despesa adicional.
-
-Fazer um programa para ler os dados de N funcionários (N fornecido pelo usuário) e armazená-los em uma lista.
-Depois de ler todos os dados, mostrar nome e pagamento de cada funcionário na mesma ordem em que foram digitados.
+Deseja-se fazer um programa que leia uma quantidade N, e depois N números inteiros. Ao final, imprima esses números de
+forma organizada. Em seguida, informar qual foi o primeiro valor informado.
