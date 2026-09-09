@@ -16,7 +16,7 @@ public class Program16 {
         myNums.add(10);
         myNums.add(5);
 
-        Number x = myNums.get(0); //Erro de compilação (contravariância)
+        //Number x = myNums.get(0); //Erro de compilação (contravariância)
 
     }
 }
