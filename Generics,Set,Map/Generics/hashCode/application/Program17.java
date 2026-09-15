@@ -8,7 +8,7 @@ public class Program17 {
 
         Client c1 = new Client("Luiz", "luiz@gmail.com");
         Client c2 = new Client("Cássia", "cassia@gmail.com");
-        Client c3 = new Client("Cássia", "cassia@gmail.com");
+        Client c3 = new Client("Cássia", "c@gmail.com");
 
         System.out.println(c1.hashCode());
         System.out.println(c2.hashCode());
