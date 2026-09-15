@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Objects;
+
 public class Client {
 
     private String name;
@@ -24,5 +26,17 @@ public class Client {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Client cliente = (Client) obj;
+        return Objects.equals(name, cliente.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(name);
     }
 }
