@@ -21,7 +21,7 @@
       <sourceFolder url="file://$MODULE_DIR$/TrabalhandoComArquivos/FileWriter&amp;BufferedWriter/Ex1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Generics,Set,Map/Generics/Ex1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Generics,Set,Map/Generics/ExGenericsDelimitado" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Generics,Set,Map/Generics/PrincipioGetPutWildCards" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Generics,Set,Map/Generics/Equals" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
