@@ -28,23 +28,15 @@ public class Client {
         this.email = email;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Client cliente = (Client) obj;
-        return Objects.equals(name, cliente.name);
-    }
-
 //    @Override
 //    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if(!(o instanceof Client)) return false;
-//        Client other = (Client) o;
-//        return Objects.equals(name, other.name);
+//        if (!(o instanceof Client)) return false;
+//        Client client = (Client) o;
+//        return Objects.equals(name, client.name) && Objects.equals(email, client.email);
 //    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(name);
-    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, email);
+//    }
 }
