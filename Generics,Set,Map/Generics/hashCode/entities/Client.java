@@ -35,6 +35,14 @@ public class Client {
         return Objects.equals(name, cliente.name);
     }
 
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if(!(o instanceof Client)) return false;
+//        Client other = (Client) o;
+//        return Objects.equals(name, other.name);
+//    }
+
     @Override
     public int hashCode() {
         return Objects.hashCode(name);
