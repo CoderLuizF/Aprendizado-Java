@@ -30,8 +30,7 @@ public class Client {
 
 //    @Override
 //    public boolean equals(Object o) {
-//        if (!(o instanceof Client)) return false;
-//        Client client = (Client) o;
+//        if (!(o instanceof Client client)) return false;
 //        return Objects.equals(name, client.name) && Objects.equals(email, client.email);
 //    }
 //
@@ -39,4 +38,17 @@ public class Client {
 //    public int hashCode() {
 //        return Objects.hash(name, email);
 //    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Client client = (Client) o;
+        return Objects.equals(name, client.name) && Objects.equals(email, client.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, email);
+    }
 }
