@@ -17,9 +17,9 @@ public class Program18 {
 
         System.out.println(set.contains("Notebook"));
 
-        set.remove("Tablet");
+        set.remove("Cd");
 
-        set.removeIf(x -> x.length() >=5);
+        set.removeIf(x -> x.charAt(0) == 'T');
 
         for (String p : set) {
             System.out.println(p);
