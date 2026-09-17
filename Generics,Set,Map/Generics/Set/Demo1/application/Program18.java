@@ -40,6 +40,10 @@ public class Program18 {
         intersection.retainAll(b);
         System.out.println(intersection);
 
+        //Diferença
+        Set<Integer> difference = new TreeSet<>(a);
+        difference.removeAll(b);
+        System.out.println(difference);
 
     }
 }
