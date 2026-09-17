@@ -15,6 +15,8 @@ public class Program18 {
 
         System.out.println(set.contains("Notebook"));
 
+        set.remove("Tablet");
+
         for (String p : set) {
             System.out.println(p);
         }
