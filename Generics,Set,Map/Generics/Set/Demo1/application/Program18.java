@@ -15,5 +15,9 @@ public class Program18 {
 
         System.out.println(set.contains("Notebook"));
 
+        for (String p : set) {
+            System.out.println(p);
+        }
+
     }
 }
