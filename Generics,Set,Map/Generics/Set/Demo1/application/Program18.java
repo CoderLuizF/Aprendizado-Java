@@ -13,5 +13,7 @@ public class Program18 {
         set.add("Notebook");
         set.add("Tablet");
 
+        System.out.println(set.contains("Notebook"));
+
     }
 }
