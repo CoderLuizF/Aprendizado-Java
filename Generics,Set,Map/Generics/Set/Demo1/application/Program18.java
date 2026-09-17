@@ -35,5 +35,11 @@ public class Program18 {
         union.addAll(b);
         System.out.println(union);
 
+        //Interseção
+        Set<Integer> intersection = new TreeSet<>(a);
+        intersection.retainAll(b);
+        System.out.println(intersection);
+
+
     }
 }
