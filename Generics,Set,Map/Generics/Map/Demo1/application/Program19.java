@@ -8,5 +8,7 @@ public class Program19 {
     public static void main(String[] args) {
 
         Map<String, String> cookies = new TreeMap<>();
+
+        cookies.put("username", "Luiz");
     }
 }
