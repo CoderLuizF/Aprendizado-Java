@@ -14,8 +14,8 @@ public class Program19 {
         cookies.put("phone", "991234567");
 
         System.out.println("ALL COOKIES: ");
-        for(String key : cookies.keySet()) {
-
+        for (String key : cookies.keySet()) {
+            System.out.println(key + ": " + cookies.get(key));
         }
 
     }
