@@ -13,6 +13,8 @@ public class Program19 {
         cookies.put("email", "luiz@gmail.com");
         cookies.put("phone", "991234567");
 
+        cookies.remove("email");
+
         System.out.println("ALL COOKIES: ");
         for (String key : cookies.keySet()) {
             System.out.println(key + ": " + cookies.get(key));
