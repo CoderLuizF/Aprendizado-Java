@@ -16,6 +16,8 @@ public class Program19 {
         cookies.remove("email");
         cookies.put("phone", "9990367687");
 
+        System.out.println("Contains 'phone' key: " + cookies.containsKey("phone"));
+
         System.out.println("ALL COOKIES: ");
         for (String key : cookies.keySet()) {
             System.out.println(key + ": " + cookies.get(key));
