@@ -1,6 +1,6 @@
 package application;
 
-import entities.Produto;
+import entities.Product;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -14,14 +14,14 @@ public class Program2 {
 
         int n = sc.nextInt();
 
-        Produto[] vect = new Produto[n];
+        Product[] vect = new Product[n];
 
         for(int i=0; i<vect.length; i++) {
             sc.nextLine();
             String name = sc.nextLine();
             double price = sc.nextDouble();
 
-            vect[i] = new Produto(name, price);
+            vect[i] = new Product(name, price);
         }
 
         double sum = 0;
