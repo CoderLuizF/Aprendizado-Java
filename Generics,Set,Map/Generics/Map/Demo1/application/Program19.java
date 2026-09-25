@@ -18,6 +18,8 @@ public class Program19 {
 
         System.out.println("Contains 'phone' key: " + cookies.containsKey("phone"));
 
+        System.out.println("Username:  " + cookies.get("username"));
+
         System.out.println("ALL COOKIES: ");
         for (String key : cookies.keySet()) {
             System.out.println(key + ": " + cookies.get(key));
