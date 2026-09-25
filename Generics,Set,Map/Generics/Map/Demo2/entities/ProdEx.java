@@ -1,5 +1,7 @@
 package entities;
 
+import java.util.Objects;
+
 public class ProdEx {
 
     private String name;
@@ -24,5 +26,17 @@ public class ProdEx {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        ProdEx prodEx = (ProdEx) o;
+        return Objects.equals(name, prodEx.name) && Objects.equals(price, prodEx.price);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, price);
     }
 }
